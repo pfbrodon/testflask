@@ -16,23 +16,27 @@
                 <label>CATEGORIA: </label>&nbsp;<input type="text" value="{{ item.categoria }}" id="categoria" name="categoria">
             </div>
             <div class="etiqueta">
-                <label>CODIGO: </label>&nbsp;<input type="text" value="{{ item.codigo }}" id="codigo" name="codigo">
+                <label>CODIGO: </label>&nbsp;<input type="numeric" value="{{ item.codigo }}" id="codigo" name="codigo">
             </div>
             <div class="etiqueta">
                 <label>DESCRIPCION: </label>&nbsp;<input type="text" value="{{ item.descripcion }}" id="descripcion" name="descripcion">
             </div>
             <div class="etiqueta">
-                <label>CANTIDAD: </label>&nbsp;<input type="text" value="{{ item.cantidad }}" id="cantidad" name="cantidad">
+                <label>CANTIDAD: </label>&nbsp;<input type="numeric" value="{{ item.cantidad }}" id="cantidad" name="cantidad">
             </div>
             <div class="etiqueta">
-                <label>PRECIO COSTO: </label>&nbsp;<input type="text" value="{{ item.precioUnit }}" id="precioUnit" name="precioUnit">
+                <label>PRECIO COSTO: </label>&nbsp;<input type="numeric" value="{{ item.precioUnit }}" id="precioUnit" name="precioUnit">
             </div>
             <div class="etiqueta">
-                <label>PRECIO VP: </label>&nbsp;<input type="text" value="{{ item.precioVPublico }}" id="precioVPublico" name="precioVPublico">
+                <label>PRECIO VP: </label>&nbsp;<input type="numeric" value="{{ item.precioVPublico }}" id="precioVPublico" name="precioVPublico">
             </div>
-            <div class="container">
-                <button type="submit" class="btn btn-success btn-lg">
+            <br>
+            <div class="botonera">
+                <button type="submit" class="btn btn-success ">
                     GUARDAR
+                </button>
+                <button type="submit" class="btn btn-danger">
+                    CANCELAR
                 </button>
             </div>
         </form>

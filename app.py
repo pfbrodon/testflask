@@ -1,11 +1,11 @@
-from flask import Flask, render_template,request, url_for,redirect
+from flask import Flask, render_template,request, url_for,redirect,flash
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Numeric
 app = Flask(__name__)
 
 
 # configuro la base de datos, con el nombre el usuario y la clave
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:12345678@localhost/proyecto'# MAC OS
+app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:12345678@localhost/proyecto'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False #none
 db= SQLAlchemy(app)   #crea el objeto db de la clase SQLAlquemyb ,cvgb                                    
 
@@ -74,17 +74,13 @@ def nuevo():
 
 @app.route('/eliminar/<int:id>',methods=['POST','GET'])
 def eliminar(id):
-    item=Producto.query.get(id)
+    item=db.session.query(Producto).get(id)
     if request.method=='POST':
         db.session.delete(item)
         db.session.commit()
+        flash('Elemento eliminado correctamente', 'success')
         return redirect(url_for('index'))
     return redirect(url_for('index'))
-
-    
-
-
-
 
 
 if __name__ == '__main__':

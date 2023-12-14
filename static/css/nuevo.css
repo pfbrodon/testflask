@@ -1,7 +1,7 @@
 .formulario {
     background-color: rgb(228, 235, 241);
     margin: 10px auto;
-    width: 600px;
+    width: fit-content;
     padding: 20px;
 }
 
@@ -9,7 +9,13 @@
     padding: 5px;
 }
 
-.container {
-    padding: 10px;
-    align-items: center;
+.botones {
+    padding: 5px;
+    text-align: center;
+}
+
+.btn {
+    outline: auto;
+    outline-width: 12px;
+    outline-color: darkgray;
 }

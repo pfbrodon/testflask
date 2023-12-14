@@ -2,6 +2,80 @@
     text-align: right;
 }
 
+.encabezado {
+    text-align: center;
+}
+
 .columNum {
     text-align: center;
 }
+
+.centrarbotones {
+    text-align: center;
+}
+
+.table {
+    font-size: 12px;
+    width: 85%;
+    border-collapse: collapse;
+}
+
+.table td:first-child,
+.table th:first-child {
+    width: 2%;
+    /* Porcentaje deseado para la primera columna */
+}
+
+.table td:nth-child(2),
+.table th:nth-child(2) {
+    width: 5%;
+    /* Porcentaje deseado para la segunda columna */
+}
+
+.table td:nth-child(3),
+.table th:nth-child(3) {
+    width: 5%;
+    /* Porcentaje deseado para la tercera columna */
+}
+
+.table td:nth-child(4),
+.table th:nth-child(4) {
+    width: 30%;
+    /* Porcentaje deseado para la cuarta columna */
+}
+
+.table td:nth-child(5),
+.table th:nth-child(5) {
+    width: 5%;
+    /* Porcentaje deseado para la cuarta columna */
+}
+
+.table td:nth-child(6),
+.table th:nth-child(6) {
+    width: 10%;
+    /* Porcentaje deseado para la cuarta columna */
+}
+
+.table td:nth-child(7),
+.table th:nth-child(7) {
+    width: 10%;
+    /* Porcentaje deseado para la cuarta columna */
+}
+
+.table td:nth-child(8),
+.table th:nth-child(8) {
+    width: 14%;
+    /* Porcentaje deseado para la cuarta columna */
+}
+
+.btn-sm {
+    width: 60px;
+    height: 20px;
+    padding: 2px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 12px;
+}
+
+
+/* Ancho del botón */

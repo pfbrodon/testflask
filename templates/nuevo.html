@@ -4,31 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Datos</title>
+    <title>Nuevo Producto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/editar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nuevo.css') }}">
 </head>
 
 <body>
     <div class="formulario">
-        <form id="app" method="POST" action="{{ url_for('editar' , id=item.id)}}">
+        <form id="app" method="POST" action="{{ url_for('nuevo') }}">
             <div class="etiqueta">
-                <label>CATEGORIA: </label>&nbsp;<input type="text" value="{{ item.categoria }}" id="categoria" name="categoria">
+                <label>CATEGORIA: </label>&nbsp;<input type="text" id="categoria" name="categoria">
             </div>
             <div class="etiqueta">
-                <label>CODIGO: </label>&nbsp;<input type="text" value="{{ item.codigo }}" id="codigo" name="codigo">
+                <label>CODIGO: </label>&nbsp;<input type="text" id="codigo" name="codigo">
             </div>
             <div class="etiqueta">
-                <label>DESCRIPCION: </label>&nbsp;<input type="text" value="{{ item.descripcion }}" id="descripcion" name="descripcion">
+                <label>DESCRIPCION: </label>&nbsp;<input type="text" id="descripcion" name="descripcion">
             </div>
             <div class="etiqueta">
-                <label>CANTIDAD: </label>&nbsp;<input type="text" value="{{ item.cantidad }}" id="cantidad" name="cantidad">
+                <label>CANTIDAD: </label>&nbsp;<input type="text" id="cantidad" name="cantidad">
             </div>
             <div class="etiqueta">
-                <label>PRECIO COSTO: </label>&nbsp;<input type="text" value="{{ item.precioUnit }}" id="precioUnit" name="precioUnit">
+                <label>PRECIO COSTO: </label>&nbsp;<input type="text" id="precioUnit" name="precioUnit">
             </div>
             <div class="etiqueta">
-                <label>PRECIO VP: </label>&nbsp;<input type="text" value="{{ item.precioVPublico }}" id="precioVPublico" name="precioVPublico">
+                <label>PRECIO VP: </label>&nbsp;<input type="text" id="precioVPublico" name="precioVPublico">
             </div>
             <div class="container">
                 <button type="submit" class="btn btn-success btn-lg">

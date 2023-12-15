@@ -13,7 +13,7 @@
     <div class="formulario">
         <form id="app" method="POST" action="{{ url_for('editar' , id=item.id)}}">
             <div class="etiqueta">
-                <label>CATEGORIA: </label>&nbsp;<input type="text" value="{{ item.categoria }}" id="categoria" name="categoria">
+                <label>CATEGORIA: </label>&nbsp;<input type="text" value="{{ item.categoria_id }}" id="categoria_id" name="categoria_id">
             </div>
             <div class="etiqueta">
                 <label>CODIGO: </label>&nbsp;<input type="numeric" value="{{ item.codigo }}" id="codigo" name="codigo">
